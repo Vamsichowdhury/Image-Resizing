@@ -1,0 +1,69 @@
+body {
+    margin: 0;
+}
+.images {
+    margin-left: 110px;
+    margin-top: 100px;
+}
+.image {
+    margin: 10px;
+    box-shadow: 0 4px 8px 0 rgb(62, 224, 224), 0 6px 20px 0 rgb(62, 224, 224);
+    transition: transform 0.2s;
+}
+.resize {
+    height: 250px;
+    width: 250px;
+    object-fit: cover;
+    object-position: center center;
+}
+.navigationBar {
+    position: fixed;
+    z-index: 1;
+    margin-top: -100px;
+    height: 70px;
+    width: 100%;
+    background-color: rgb(28, 187, 192);
+    display: flex;
+    justify-content: center;
+}
+.navigationBar > h1>a{
+    margin-top: 0px;
+    padding-top: 10px;
+    color: rgb(113, 121, 120);
+    text-decoration: none;
+}
+.navigationBar > button {
+    margin-top: 25px;
+    height: 35px;
+    width: 100px;
+    margin-left: 20px;
+    border: none;
+    background-color: rgb(113, 121, 120);
+    color: white;
+    font-size: larger;
+}
+.navigationBar > button:hover {
+    margin-top: 15px;
+    height: 35px;
+    width: 100px;
+    margin-left: 20px;
+    color: rgb(28, 187, 192);
+    font-size: larger;
+    cursor: pointer;
+}
+.image:hover {
+    margin: 10px;
+    box-shadow: 0 4px 8px 0 rgb(62, 224, 224), 0 6px 20px 0 rgb(62, 224, 224);
+    transform: scale(1.1);
+}
+.image-container {
+    position: relative;
+    display:inline-block
+}
+
+.image-container>i {
+    position: absolute;
+    top: 120px;
+    left: 120px;
+    opacity: 0.5;  
+}
